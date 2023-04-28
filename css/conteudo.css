@@ -20,19 +20,18 @@ GROW/BASIS/SHRINK */
     flex: 1 1 300px;
 }
 
-.conteudo table{
+table{
     border-collapse:  collapse;
+    margin: 5% auto;
 }
-
-.conteudo 
-
-table 
-
-
 
 th,td{
-    border: 2px solid #000000;
+    border: 2px solid #dddddd;
+    padding: 8px;
 }
+
+
+
 
 tr:nth-child(even) {
     background-color: #Ccc;
@@ -47,6 +46,6 @@ tr:nth-child(1) {
     color: #fff
 }
 
-tr:houvee {
+tr:hover {
     background-color: rgb(17, 17, 17);
 }
