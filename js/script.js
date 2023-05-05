@@ -38,6 +38,10 @@ var nome1 = "Beatriz";
 let nome2 = "Matheus";
 const nome3 = "Violante";
 
+console.log(nome1);
+console.log(nome2);
+console.log(nome3);
+
 //REGRAS DO CONST
 //1ª Regra = Inicializar na declaração
 //2ª Regra = Não pode ser alterado durante o fluxo do programa. Utilzar apenas com constantes (ex: Número pi)
@@ -70,3 +74,37 @@ const nome3 = "Violante";
 //    console.log(nome);
 //}
 
+//ARRAY e seus métodos
+let frutas = ["banana", "maça", "kiwi", "melância", "morango", "laranja"];
+console.table(frutas);
+console.log(frutas);
+
+//Adicionar um item ao final do array com o método push(item);
+frutas.push("melão");
+console.log(frutas);
+
+//Adicionar um item no início do array com o método unshift(item);
+frutas.unshift("cajú");
+console.log(frutas);
+
+//Remover um item do final do array com o método pop();
+frutas.pop();
+console.log(frutas);
+
+//Remover um item do início do array com o método shift();
+frutas.shift();
+console.log(frutas);
+
+//Para localizar um item dentro do array, utilizamos o método indexOf(itenNome);
+//let indice = frutas.indexOf("morango");
+//console.log(frutas[indice]);
+
+//Para localizar um itém dentro do array, e apagar ele apagar ele utilizamos o método splice(indice do item, quantidade de vezes que o indice será removido).
+//Obs: utilize o método indexOf(itenNome) para obter o indice do iten;
+let indice = frutas.indexOf("carambola");
+frutas.splice(indice,1);
+console.log(frutas);
+
+frutas.forEach((fruta)=>{
+    console.log("A fruta escolhida foi: " + fruta);
+});
