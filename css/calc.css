@@ -4,6 +4,16 @@
     justify-content: center; 
 }
 
+.btn-menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-menu button{
+    flex-grow: 1;
+    margin: 2% 0;
+}
+
 .btn-calc{
     display: flex;
     flex-wrap: wrap;
